@@ -6,6 +6,16 @@
     box-sizing: border-box;
 }
 
+/* General Styles */
+body {
+    min-height: 100vh;
+    /* Flex will apply a flexbox to the children of the body element */
+    display: flex;
+    flex-direction: column;
+    /* Generic project styles */
+    color: #3a3a3a;
+}
+
 /* Header */
 header {
     background-color: lightcoral;
@@ -14,6 +24,8 @@ header {
 /* Main Content */
 main {
     background-color: lightblue;
+    /* Make main element take up any surplus space by growing to fill, and push footer down */
+    flex: 1 0 auto;
 }
 
 /* Footer */
